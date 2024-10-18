@@ -1,1 +1,1 @@
-export type SquareValue = 'X' | 'Y' | null;
+export type SquareValue = 'X' | 'O' | null;

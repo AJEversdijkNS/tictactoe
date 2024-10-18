@@ -1,1 +1,16 @@
-<p>game-board works!</p>
+<div>
+  <h1>TicTacToe</h1>
+  <p>Current turn {{ currentPlayer }}</p>
+
+  <button test-id="newGameButton" (click)="resetGame()">New Game</button>
+
+  @if (lastWinner) {
+  <p>last winner: {{ lastWinner }}</p>
+  }
+
+  <div class="gameBoard">
+    @for( squares of gameBoard; track $index){
+    <app-square id="square" [value]="squares" (click)="completeTurn($index)" />
+    }
+  </div>
+</div>

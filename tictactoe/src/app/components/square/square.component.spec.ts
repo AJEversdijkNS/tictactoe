@@ -34,8 +34,8 @@ describe('SquareComponent', () => {
     expect(component.value).toBe('X');
   });
 
-  it('Should take input "Y"', () => {
-    component.value = 'Y';
-    expect(component.value).toBe('Y');
+  it('Should take input "O"', () => {
+    component.value = 'O';
+    expect(component.value).toBe('O');
   });
 });
