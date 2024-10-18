@@ -10,7 +10,11 @@
 
   <div class="gameBoard">
     @for( squares of gameBoard; track $index){
-    <app-square id="square" [value]="squares" (click)="completeTurn($index)" />
+    <app-square
+      [id]="'square' + $index"
+      [value]="squares"
+      (click)="completeTurn($index)"
+    />
     }
   </div>
 </div>

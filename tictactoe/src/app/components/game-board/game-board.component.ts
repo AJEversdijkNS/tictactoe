@@ -39,6 +39,9 @@ export class GameBoardComponent implements OnInit {
   }
 
   completeTurn(squareIndex: number): void {
+    console.log(squareIndex);
+    console.log(this.gameBoard);
+    console.log(this.gameBoard[squareIndex]);
     if (!this.gameBoard[squareIndex]) {
       this.gameBoard.splice(squareIndex, 1, this.currentPlayer);
       this.currentPlayer = this.currentPlayer === 'X' ? 'O' : 'X';
